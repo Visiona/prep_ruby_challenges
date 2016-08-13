@@ -11,4 +11,3 @@ def combinations(arr1, arr2)
 end
 
 p combinations(["on","in","sam", "tala", "123"], ["to","rope"])
-#=> [“onto”,”onrope”,”into”,”inrope”]
