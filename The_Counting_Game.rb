@@ -16,7 +16,6 @@ def CounterGame(players, num_final)
 
     if count%7 == 0
       switch == 0 ? switch=1: switch=0
-      "Player number #{n}'' said '#{count} but switch is #{switch}'"
     end
 
     if count%11 == 0
@@ -44,7 +43,5 @@ def CounterGame(players, num_final)
     count +=1
   end
 end
-
-
 
 puts CounterGame(10,100)
