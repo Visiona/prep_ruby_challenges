@@ -11,10 +11,12 @@ def CounterGame(players, num_final)
   count = 1 # count is count up number
   switch = 0 #switch is to switch directions (1 countercockwise, 0 clockwise)
 
-  while count <= 100
+  while count <= num_final
+    puts "Player 'number #{n}' said '#{count}'"
 
-    if (count%7 == 0)
-      switch = 1
+    if count%7 == 0
+      switch == 0 ? switch=1: switch=0
+      "Player number #{n}'' said '#{count} but switch is #{switch}'"
     end
 
     if count%11 == 0
@@ -26,12 +28,23 @@ def CounterGame(players, num_final)
     end
 
     if switch == 0
-      n += 1
+      if n== players
+        n=1
+      else
+        n += 1
+      end
     else
-      n -=1
+      if n==1
+        n=10
+      else
+        n -=1
+      end
     end
 
-    count += 1
-    return n
+    count +=1
   end
 end
+
+
+
+puts CounterGame(10,100)
